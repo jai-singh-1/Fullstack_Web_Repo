@@ -99,146 +99,192 @@
                 font-style: italic;
                 color: #3db2ff;
             }
+            #loader {
+                border: 16px solid #f3f3f3;
+                border-top: 16px solid #3498db;
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                position: absolute;
+                top: 40%;
+                right: 48%;
+                transform: translate(50%, -50%);
+                animation: spin 2s linear infinite;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            #mydiv {
+                display: none;
+                text-align: center;
+            }
         </style>
     </head>
-    <body>
-        <div class="heading">
-            <h1>Welcome to FullStack Course</h1>
-            <h2>Live practicals of FullStack / Updated Index page</h2>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="3">List of Practicals</th>
-                </tr>
-                <tr>
-                    <th>#</th>
-                    <th>Practical Name</th>
-                    <th>Links</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>*</td>
-                    <td>Web page have a navigation bar with two dropdown.</td>
-                    <td class="deliver">
-                        <a href="./Pages/navigation.html">Practice</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.</td>
-                    <td>
-                        Create a Web page including HTML basic skeleton using
-                        Offline HTML Editor and Online codepen environmen
-                    </td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 1.html">Practical-1</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>
-                        Create a web page showing a basic html structure using
-                        character Entities and span Tag.
-                    </td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 2.html">Practical-2</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>Live your First Web-Page on Git-Hub.</td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 3.html">Practical-3</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4.</td>
-                    <td>
-                        Create a website having list of all practical and their
-                        individual practical Page links.
-                    </td>
-                    <td class="deliver">
-                        <a href="#">Practical-4</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>
-                        Create a Web-Page showing the use of Image-Map in the
-                        Web Application.
-                    </td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 5.html">Practical-5</a>
-                    </td>
-                </tr>
+    <body onload="myFunction()">
+        <div id="loader"></div>
+        <div id="mydiv" style="display: none">
+            <div class="heading">
+                <h1>Welcome to FullStack Course</h1>
+                <h2>Live practicals of FullStack / Updated Index page</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">List of Practicals</th>
+                    </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>Practical Name</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>*</td>
+                        <td>
+                            Web page have a navigation bar with two dropdown.
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/navigation.html">Practice</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>
+                            Create a Web page including HTML basic skeleton
+                            using Offline HTML Editor and Online codepen
+                            environmen
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 1.html">Practical-1</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>
+                            Create a web page showing a basic html structure
+                            using character Entities and span Tag.
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 2.html">Practical-2</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Live your First Web-Page on Git-Hub.</td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 3.html">Practical-3</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>
+                            Create a website having list of all practical and
+                            their individual practical Page links.
+                        </td>
+                        <td class="deliver">
+                            <a href="#">Practical-4</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>
+                            Create a Web-Page showing the use of Image-Map in
+                            the Web Application.
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 5.html">Practical-5</a>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>6.</td>
-                    <td>Create a Card Layout using CSS layout properties.</td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 6.html">Practical-6</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td>Create a Web Page Layout using div tags.</td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 7.html">Practical-7</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td>
-                        Create a Web Page having Fixed Navigation Bar with the
-                        given content.
-                    </td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 8.html">Practical-8</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>9.</td>
-                    <td>
-                        Create a Responsive Web Layout with Responsive
-                        Navigation Bar.
-                    </td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 9.html">Practical-9</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>10.</td>
-                    <td>Create a Responsive Side-Bar Navigation Menu.</td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 10.html">Practical-10</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>11.</td>
-                    <td>Create a Responsive Footer Template.</td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 11.html">Practical-11</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>12.</td>
-                    <td>
-                        Create a Table that represent Live Practical Book
-                        Records .
-                    </td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 12.html">Practical-12</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>13.</td>
-                    <td>Create a Custom Price Table Template .</td>
-                    <td class="deliver">
-                        <a href="./Pages/practical 13.html">Practical-13</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    <tr>
+                        <td>6.</td>
+                        <td>
+                            Create a Card Layout using CSS layout properties.
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 6.html">Practical-6</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Create a Web Page Layout using div tags.</td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 7.html">Practical-7</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>
+                            Create a Web Page having Fixed Navigation Bar with
+                            the given content.
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 8.html">Practical-8</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>
+                            Create a Responsive Web Layout with Responsive
+                            Navigation Bar.
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 9.html">Practical-9</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>Create a Responsive Side-Bar Navigation Menu.</td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 10.html">Practical-10</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11.</td>
+                        <td>Create a Responsive Footer Template.</td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 11.html">Practical-11</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12.</td>
+                        <td>
+                            Create a Table that represent Live Practical Book
+                            Records .
+                        </td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 12.html">Practical-12</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.</td>
+                        <td>Create a Custom Price Table Template .</td>
+                        <td class="deliver">
+                            <a href="./Pages/practical 13.html">Practical-13</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 3000);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("mydiv").style.display = "block";
+            }
+        </script>
     </body>
 </html>
